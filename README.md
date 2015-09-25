@@ -18,6 +18,7 @@ If you are reading this and taking the effort to understand these papers, you sh
 
 ## <a name='dht'> Distributed Hash Tables
 * [Experiences with CoralCDN: A Five-Year Operational View](http://www.cs.princeton.edu/~mfreed/docs/coral-nsdi10.pdf) (2010): CoralCDN provides an open (and free!) web content distributuion network (CDN) that anyone can use simply by appending .nyud.net to any URL. This paper presents lessons from a 5-year deployment of CoralCDN, one of the largest/longest real-world deployments of a DHT-based system. Paper presents challenges they faced and solutions that worked, along with lessons for building open systems.
+* [Beehive: O(1) Lookup Performance for Power-Law Query Distributions in Peer-to-Peer Overlays](https://www.cs.cornell.edu/people/egs/papers/beehive.pdf) (2004): Beehive encourages looking at usage/query patterns of your target application and then optimizing caching in the DHT accordingly. DNS lookups (their target application) for example have a power-law query distribution and proactive replication can help a lot for performance in that case.
 
 ## <a name='storage'> Storage Systems
 * [Efficient Replica Maintenance for Distributed Storage Systems](http://oceanstore.cs.berkeley.edu/publications/papers/pdf/carbonite06.pdf) (2006): This paper looks at replication strategies for distirbuted storage systems and tradeoff between false positives and rereplication costs, particularly in trying to accurately differentiate between nodes which have temporarily lost connectivity and those which are more permanently offline.
