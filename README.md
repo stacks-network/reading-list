@@ -22,6 +22,7 @@ If you are reading this and taking the effort to understand these papers, you sh
 
 ## <a name='storage'> Storage Systems
 * [Efficient Replica Maintenance for Distributed Storage Systems](http://oceanstore.cs.berkeley.edu/publications/papers/pdf/carbonite06.pdf) (2006): This paper looks at replication strategies for distributed storage systems and tradeoff between false positives and rereplication costs, particularly in trying to accurately differentiate between nodes which have temporarily lost connectivity and those which are more permanently offline.
+* [Dynamo: Amazon’s Highly Available Key-value Store](http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf) (2007): Dynamo is Amazon's production key/value store that makes a tradeoff between consistency for availability and performance and uses eventual consistency. Amazon actually controls all nodes where DynamoDB is deployed, trying to build a similar system under decentralization requirements is much harder.  
 
 ## <a name='consensus'> Consensus
 * [In Search of an Understandable Consensus Algorithm](https://www.usenix.org/system/files/conference/atc14/atc14-paper-ongaro.pdf) (2014): This paper presents Raft, which is equivalent to multi-Paxos but much easier to understand. There have been dozens of real-world Raft implementations, some of which are in production use, within the couple of years that this work came out.
