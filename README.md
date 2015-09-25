@@ -5,7 +5,7 @@ A reading list of relevant research papers on blockchains, P2P networks, and sto
 Cryptocurrency blockchains and decentralized systems built using them are marking a "second wave" of decentralized systems, where the first wave (2000-2005) was largely driven by advances in DHT and peer-to-peer systems. The problems that a lot of developers and researchers working on blockchain-based systems are trying to solve (like decentralized storage, decentralize DNS etc) were earlier investigated by a large number of researchers. It'd be unfortunate if the folks trying to build the new generation of such systems aren't aware of prior work and lessons learned.
 
 ## Contributions
-Anyone can send pull requests to this repo and explain why a certain paper should be included. The list is currently maintained by [Muneeb Ali](http://twitter.com/muneeb) and others are welcome to help maintain the list. Paper additions might take a while since the maintainer(s) needs to go over the paper.
+Anyone can send pull requests to this repo and explain why a certain paper should be included. The reading-list is for systems that have been deployed in practice or lessons from real-world experiements e.g., from PlanetLab, and not for theoretically interesting papers. The list is currently maintained by [Muneeb Ali](http://twitter.com/muneeb) and others are welcome to help maintain the list. Paper additions might take a while since the maintainer(s) needs to go over the paper.
 
 If you are reading this and taking the effort to understand these papers, you should consider joining the public Slack of [Blockstack](http://blockstack.org).
 
@@ -13,6 +13,7 @@ If you are reading this and taking the effort to understand these papers, you sh
 
   1. [Distributed Hash Tables](#dht)
   2. [Storage Systems](#storage)
+  3. [Consensus](#consensus)
 
 
 ## <a name='dht'> Distributed Hash Tables
@@ -20,3 +21,6 @@ If you are reading this and taking the effort to understand these papers, you sh
 
 ## <a name='storage'> Storage Systems
 * [Efficient Replica Maintenance for Distributed Storage Systems](http://oceanstore.cs.berkeley.edu/publications/papers/pdf/carbonite06.pdf) (2006): This paper looks at replication strategies for distirbuted storage systems and tradeoff between false positives and rereplication costs, particularly in trying to accurately differentiate between nodes which have temporarily lost connectivity and those which are more permanently offline.
+
+## <a name='consensus'> Consensus
+* [In Search of an Understandable Consensus Algorithm](https://www.usenix.org/system/files/conference/atc14/atc14-paper-ongaro.pdf) (2014): This paper presents Raft, which is equivalent to multi-Paxos but much easier to understand. There have been dozens of real-world Raft implementations, some of which are in production use, within the couple of years that this work came out.
