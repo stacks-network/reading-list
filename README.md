@@ -6,6 +6,7 @@ A reading list of relevant research papers on blockchains, P2P networks, and sto
   1. [Distributed Hash Tables](#dht)
   2. [Storage Systems](#storage)
   3. [Consensus](#consensus)
+  4. [Consistency](#consistency)
   
 ## Why?
 Cryptocurrency blockchains and decentralized systems built using them are marking a "second wave" of decentralized systems, where the first wave (2000-2005) was largely driven by advances in DHT and peer-to-peer systems. The problems that a lot of developers and researchers working on blockchain-based systems are trying to solve (like decentralized storage, decentralize DNS etc) were earlier investigated by a large number of researchers. It'd be unfortunate if the folks trying to build the new generation of such systems aren't aware of prior work and lessons learned.
@@ -28,3 +29,6 @@ If you are reading this and taking the effort to understand these papers, you sh
 
 ## <a name='consensus'> Consensus
 * [In Search of an Understandable Consensus Algorithm](https://www.usenix.org/system/files/conference/atc14/atc14-paper-ongaro.pdf) (2014): This paper presents Raft, which is equivalent to multi-Paxos but much easier to understand. There have been dozens of real-world Raft implementations, some of which are in production use, within the couple of years that this work came out.
+
+## <a name='consistency'> Consistency
+* [Don’t Settle for Eventual: Scalable Causal Consistency for Wide-Area Storage with COPS](http://www-bcf.usc.edu/~wyattllo/papers/cops-sosp11.pdf): This paper defines casual+ consistency and presents a key/value store that delivers this consistency model across wide-area networks. The paper is also interesting to get background on different consistency models.
